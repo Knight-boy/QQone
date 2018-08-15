@@ -63,14 +63,14 @@ h1, h2, h3, h4, h5 {
 
 .info-list, .progress-list{
     list-style: none;
-    padding-left: 0px;
+    padding-left: 0;
     font-size: 16px;
     line-height: 2;
 }
 
 .stack-list {
     list-style: none;
-    padding-left: 0px;
+    padding-left: 0;
     line-height: 1.5;
 }
 
@@ -270,7 +270,7 @@ ul li{
  .experience-list .item-remove {
     position: absolute;
     right: 2px;
-    top: 0px;
+    top: 0;
     margin-right: 2px;
     visibility: hidden;
     cursor: pointer;
@@ -280,7 +280,7 @@ ul li{
  .stack-list .item-remove {
     position: absolute;
     right: 2px;
-    top: 0px;
+    top: 0;
     margin-right: 2px;
     visibility: hidden;
     cursor: pointer;
