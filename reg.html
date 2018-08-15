@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registering</title>
+    <script type="text/javascript" src="./public/javascript/Rexp.js"></script>
+    <link rel='stylesheet' href='./public/css/style.css' />
+</head>
+<body>
+<div class="nav">
+    <div class="nav_area">
+        <div class="center_area">
+            <div class="clearfix">
+                <ul class="navigation">
+                    <li class="dropdown"><a href="/">首页</a></li>
+                    <li class="lastchild" style="float:right"><a href="/log">登陆</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="login-container">
+    <div class="login" id="reg_page">
+
+        <form action="/reg" class="form-horizontal" method="post">
+            <fieldset style="border-style: none;">
+                <!--<div class="fieldset-control">-->
+                <h1 class="welcome">新用户注册</h1>
+                <!--</div>-->
+                <div class="groupt">
+                    <label for="account" class="controllabel">用户名:</label>
+                    <input id="account" type="text" class="formcontrol" placeholder="同户名可以是字母数字下划线"
+                           name="username" onblur="compareData()" required/><span id="usermessage"></span>
+                </div>
+
+                <div class="groupt">
+                    <label for="password" class="controllabel">设置密码:</label>
+                    <input id="password" type="password" class="formcontrol" placeholder="请输入6-18位包括下划线的单词字符"
+                           name="password" onblur="comparePData()" required/><span id="passwordmesg"></span>
+                </div>
+
+                <div class="groupt">
+                    <label for="password-repeat" class="controllabel">再次输入:</label>
+                    <input id="password-repeat" type="password" class="formcontrol" placeholder="请输入6-18位包括下划线的单词字符"
+                           name="repeatpassword" onblur="comparePRDATA()" onblur="comparePRData()"/><span id="password-repeat-mesg"></span>
+                </div>
+                <div class="groupt">
+                    <label for="email" class="controllabel">邮箱:</label>
+                    <input id="email" type="email" class="formcontrol" placeholder="Username@example.com"
+                           name="email" onblur="compareEData()"/><span id="emailmessage"></span>
+                </div>
+                <div class="groupt">
+                    <label for="telephone" class="controllabel">手机号:</label>
+                    <input id="telephone" type="tel" class="formcontrol" placeholder="Telephone"
+                           name="telephone" onblur="compareTData()" maxlength="11"/><span id="telephonemesg"></span>
+                </div>
+                <div class="fieldsetcontrol">
+                    <div class="submit-login">
+                        <button type="submit" class="btndefault">立即注册</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<div id="container" class="container">
+    <div class="main-content"></div>
+</div>
+<footer>
+    <hr/>
+    <p>
+        <a href="http://www.knight.com" target="_blank">ByKnight </a>
+        &copy 2018
+    </p>
+</footer>
+<div id="scrolltop" style="right:10px;visibility:visible;">
+    <span>
+        <a title="返回首页" class="returnboard" hidefocus="true" href="/"></a>
+    </span>
+</div>
+</body>
+</html>
