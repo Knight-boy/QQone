@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Writing...</title>
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css"/>
+    <script type="text/javascript" src="../src/javascript/EventUtil.js"></script>
+</head>
+<body>
+<script src="https://lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://lib.baomitu.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://lib.baomitu.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<div class="nav">
+    <div class="nav_area">
+        <div class="center_area">
+            <div class="clearfix">
+                <ul class="navigation">
+                    <li class="dropdown">
+                        <a href="/" class="active">首页</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropbutton" href="javascript:;">相册</a>
+                        <div class="drop-content">
+                            <a href="../public/images/webwxgetmsgimg.jpg">我</a>
+                            <a href="#">家人</a>
+                            <a href="#">朋友</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropbutton" href="javascript:;">空间</a>
+                        <div class="drop-content">
+                            <a href="#">QQ空间</a>
+                            <a href="#">VR空间</a>
+                            <a href="#">虚拟空间</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropbutton" href="javascript:;">留言</a>
+                        <div class="drop-content">
+                            <a href="#" target="_blank">Sina Weibo</a>
+                            <a href="#" target="_blank">ChatOnline</a>
+                            <a href="#" target="_blank">Facebook</a>
+                        </div>
+                    </li>
+                    <li class="lastchild" style="float:right">
+                        <a href="/">登出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="container"></div> -->
+<div id="container" class="container">
+    <div class="main-content">
+        <div class="col-md-12">
+            <div class="div" style="border:none;margin: 0 -15px 5px;">
+                <form action="/pub" method="post">
+
+                    <div id="toolbar">
+                        <div id="divSimple">
+                            <p>
+                                <button type="button" class="btn btn-default btn-xs" value="Bold" title="粗体">
+                                    <span class="glyphicon glyphicon-bold" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="Italic" title="斜体">
+                                    <span class="glyphicon glyphicon-italic" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="Underline" title="下划线">
+                                    <span class="glyphicon glyphicon-text-color" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="Strikethrough" title="删除线">
+                                    <span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
+                                </button>
+
+                                <button type="button" class="btn btn-default btn-xs" value="Superscript" title="上标">
+                                    <span class="glyphicon glyphicon-superscript" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="Subscript" title="下标">
+                                    <span class="glyphicon glyphicon-subscript" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="Indent" title="缩进">
+                                    <span class="glyphicon glyphicon-indent-left" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="Outdent" title="突起">
+                                    <span class="glyphicon glyphicon-indent-right" aria-hidden="true"></span>
+                                </button>
+
+                                <button type="button" class="btn btn-default btn-xs" value="Justifyleft" title="左对齐">
+                                    <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="Justifycenter" title="居中">
+                                    <span class="glyphicon glyphicon-align-center" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="Justifyright" title="右对齐">
+                                    <span class="glyphicon glyphicon-align-right" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="Justify" title="分散对齐">
+                                    <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="Copy" title="复制">
+                                    <span class="glyphicon glyphicon-copy" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="Cut" title="剪切">
+                                    <span class="glyphicon glyphicon-scissors" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="Paste" title="粘贴">
+                                    <span class="glyphicon glyphicon-paste" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="Selectall" title="全选">
+                                    <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="Removeformat" title="格式化">
+                                    <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="Delete" title="删除">
+                                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                </button>
+
+                                <button type="button" class="btn btn-default btn-xs" value="Print" title="打印">
+                                    <span class="glyphicon glyphicon-print" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="InsertOrderedList" title="有序列表">
+                                    <span class="glyphicon glyphicon-sort-by-attributes" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="InsertUnOrderedList" title="无序列表">
+                                    <span class="glyphicon glyphicon-random" aria-hidden="true"></span>
+                                </button>
+
+                            </p>
+                        </div>
+
+                        <div id="divComplex">
+                            <p>
+                                <button type="button" class="btn btn-default btn-xs" value="Create Link" id="btnCreateLink" title="超链接">
+                                    <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="UnLink" id="btnUnlink" title="取消超链接">
+                                    <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs">
+                                    <span class="glyphicon glyphicon-header" aria-hidden="true"></span>
+                                    <select name="title" id="btnHead" title="标题">
+                                        <option value="<h1>">标题h1(36px)</option>
+                                        <option value="<h2>">标题h2(30px)</option>
+                                        <option value="<h3>">标题h3(24px)</option>
+                                        <option value="<h4>">标题h4(18px)</option>
+                                        <option value="<h5>">标题h5(14px)</option>
+                                        <option value="<h6>">标题h6(12px)</option>
+                                    </select>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs">
+                                    <span class="glyphicon glyphicon-font" aria-hidden="true"></span>
+                                    <select name="fontFamily" id="fontfamily" title="字体">
+                                        <option value="宋体,simsun">宋体</option>
+                                        <option value="楷体,楷体_gb2312,simkai">楷体</option>
+                                        <option value="隶书,simli">隶书</option>
+                                        <option value="黑体,simhei">黑体</option>
+                                        <option value="andale mono,times">Andale Mono</option>
+                                        <option value="arial,helvetica,sans-serif">Arial</option>
+                                        <option value="arial black,avant garde">Arial Black</option>
+                                        <option value="comic sans ms,cursive,sans-serif">Comic Sans Ms</option>
+                                        <option value="courier new,courier,monospace">Courier New</option>
+                                        <option value="georgia,serif">Georgia</option>
+                                        <option value="impact,charcoal,sans-serif">Impact</option>
+                                        <option value="lucida sans unicode,lucida grande,sans-serif">Lucida Sans Unicode</option>
+                                        <option value="lucida console,monaco,monospace">Lucida Console</option>
+                                        <option value="tahoma,geneva,sans-serif">Tahoma</option>
+                                        <option value="trebuchet ms,helvetica,sans-serif">Trebuchet Ms</option>
+                                        <option value="times new roman,times,serif">Times New Roman</option>
+                                        <option value="verdana,geneva,sans-serif">Verdana</option>
+                                    </select>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs">
+                                    <span class="glyphicon glyphicon-text-size" aria-hidden="true"></span>
+                                    <select name="fontSize" id="fontsize" title="字体大小">
+                                        <option value="1">12 px</option>
+                                        <option value="2">14 px</option>
+                                        <option value="3">18 px</option>
+                                        <option value="4">24 px</option>
+                                        <option value="5">30 px</option>
+                                        <option value="6">36 px</option>
+                                        <option value="7">42 px</option>
+                                    </select>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs">
+                                    <span class="glyphicon glyphicon-text-color" aria-hidden="true"></span>
+                                    <select name="fontColor" id="fontcolor" title="字体颜色">
+                                        <option value="#000000">Black</option>
+                                        <option value="#FF0000">Red</option>
+                                        <option value="#00FF00">Green</option>
+                                        <option value="#0000FF">Blue</option>
+                                        <option value="#FFFF00">Yellow</option>
+                                        <option value="#FF00FF">Purple</option>
+                                        <option value="#00FFFF">Cyan</option>
+                                    </select>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs">
+                                    <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span>
+                                    <select name="backColor" id="backcolor" title="背景色">
+                                        <option value="#FFFFFF">white</option>
+                                        <option value="#FF0000">Red</option>
+                                        <option value="#00FF00">Green</option>
+                                        <option value="#0000FF">Blue</option>
+                                        <option value="#FFFF00">Yellow</option>
+                                        <option value="#FF00FF">Purple</option>
+                                        <option value="#00FFFF">Cyan</option>
+                                    </select>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" id="btnHighlight" title="高亮">
+                                    <span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" id="btnGetHtml" title="获取HTML元素">
+                                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" id="btnGetSelected" title="显示文本">
+                                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" id="btnHr" title="分隔线">
+                                    <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" id="btnInsertParagraph" title="插入段落">
+                                    <span class="glyphicon glyphicon-console" aria-hidden="true"></span>
+                                </button>
+                            </p>
+
+                        </div>
+
+                        <div id="divQuery">
+                            <p>
+                                <button type="button" class="btn btn-default btn-xs" value="Bold">
+                                    <span class="glyphicon glyphicon-bold" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="Italic">
+                                    <span class="glyphicon glyphicon-italic" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default btn-xs" value="Underline">
+                                    <span class="glyphicon glyphicon-text-color" aria-hidden="true"></span>
+                                </button>
+                            </p>
+                            <div class="dropdown">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <iframe name="richedit" style="min-height:35px;width:100%" contenteditable></iframe>
+                    <textarea placeholder="Input now..." name="contents" rows="3" cols="20" style="background-color: transparent;"></textarea><br/>
+                    <div class="btn-group">
+                        <button type="submit" class="btn btn-default">发送</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var EventUtil = {
+
+                addHandler: function (element, type, handler) {
+                    if (element.addEventListener) {
+                        element.addEventListener(type, handler, false);
+                    } else if (element.attachEvent) {
+                        element.attachEvent("on" + type, handler);
+                    } else {
+                        element["on" + type] = handler;
+                    }
+                },
+                getEvent: function(event){
+                    return event ? event : window.event;
+                },
+                getTarget: function(event){
+                    return event.target || event.srcElement;
+                }
+            };
+            (function () {
+
+                EventUtil.addHandler(window, "load", function () {
+                    frames["richedit"].document.designMode = "on";
+                });
+
+                var simple = document.getElementById("divSimple");
+                var complex = document.getElementById("divComplex");
+                var queryDiv = document.getElementById("divQuery");
+
+                EventUtil.addHandler(document.forms[0], "submit", function (event) {
+                    event = EventUtil.getEvent(event);
+                    var target = EventUtil.getTarget(event);
+
+                    target.elements["contents"].value = frames["richedit"].document.body.innerText;
+                });
+
+                EventUtil.addHandler(simple, "click", function (event) {
+                    event = EventUtil.getEvent(event);
+                    var target = EventUtil.getTarget(event);
+
+                    if (target.type === "button") {
+                        frames["richedit"].document.execCommand(target.value.toLowerCase(), false, null);
+                    }
+                });
+
+                EventUtil.addHandler(complex, "click", function (event) {
+                    event = EventUtil.getEvent(event);
+                    var target = EventUtil.getTarget(event);
+
+                    switch (target.id) {
+
+                        case "btnHead":
+                            var selectbox = document.forms[0].elements["title"];
+                            var Index = selectbox.selectedIndex;
+                            var selectedOption = selectbox.options[Index];
+                            if (selectedOption.selected) {
+                                frames["richedit"].document.execCommand('formatblock', false, selectedOption.value);
+                            }
+                            break;
+
+                        case "btnInsertParagraph":
+                            frames["richedit"].document.execCommand("insertparagraph", false, null);
+                            break;
+                        case "fontfamily":
+                            var selectbox = document.forms[0].elements["fontFamily"];
+                            var Index = selectbox.selectedIndex;
+                            var selectedOption = selectbox.options[Index];
+                            if (selectedOption.value) {
+                                frames["richedit"].document.execCommand("fontname", false, selectedOption.value);
+                            }
+                            break;
+                        case "fontsize":
+                            var selectbox = document.forms[0].elements["fontSize"];
+                            var Index = selectbox.selectedIndex;
+                            var selectedOption = selectbox.options[Index];
+                            if (selectedOption.value) {
+                                frames["richedit"].document.execCommand("fontsize", false, parseInt(selectedOption.value, 10));
+                            }
+                            break;
+                        case "fontcolor":
+                            var selectbox = document.forms[0].elements["fontColor"];
+                            var Index = selectbox.selectedIndex;
+                            var selectedOption = selectbox.options[Index];
+                            if (selectedOption.selected) {
+                                frames["richedit"].document.execCommand("forecolor", false, selectedOption.value);
+                            }
+                            break;
+                        case "backcolor":
+                            var selectbox = document.forms[0].elements["backColor"];
+                            var Index = selectbox.selectedIndex;
+                            var selectedOption = selectbox.options[Index];
+                            if (selectedOption.selected) {
+                                frames["richedit"].document.execCommand("backcolor", false, selectedOption.value);
+                            }
+                            break;
+                        case "btnInsertOrderedList":
+                            frames["richedit"].document.execCommand("insertorderedlist", false, null);
+                            break;
+                        case "btnInsertUnorderedList":
+                            frames["richedit"].document.execCommand("insertunorderedlist", false, null);
+                            break;
+
+                        case "btnHr":
+                            frames["richedit"].document.execCommand("inserthorizontalrule", false, null);
+                            break;
+                        case "btnGetHtml":
+                            alert(frames["richedit"].document.body.innerHTML);
+                            break;
+                        case "btnCreateLink":
+                            var link = prompt("What link?", "http://www.jd.com");
+                            if (link) {
+                                frames["richedit"].document.execCommand("createlink", false, link);
+                            }
+                            break;
+                        case "btnUnlink":
+                            frames["richedit"].document.execCommand("unlink", false, null);
+                            break;
+
+                        case "btnGetSelected":
+                            if (frames["richedit"].getSelection) {
+                                alert(frames["richedit"].getSelection().toString());
+                            } else if (frames["richedit"].document.selection) {
+                                alert(frames["richedit"].document.selection.createRange().text);
+                            }
+                            break;
+                        case "btnHighlight":
+                            if (frames["richedit"].getSelection) {
+                                var selection = frames["richedit"].getSelection();
+                                var range = selection.getRangeAt(0);
+                                var span = frames["richedit"].document.createElement("span");
+                                span.style.backgroundColor = "yellow";
+                                range.surroundContents(span);
+                            } else if (frames["richedit"].document.selection) {
+                                var range = frames["richedit"].document.selection.createRange();
+                                range.pasteHTML("<span style=\"background-color:yellow\">" + range.htmlText + "</span>");
+                            }
+                            break;
+                    }
+                });
+
+                EventUtil.addHandler(queryDiv, "click", function (event) {
+                    event = EventUtil.getEvent(event);
+                    var target = EventUtil.getTarget(event);
+
+                    if (target.type === "button") {
+                        alert(frames["richedit"].document.queryCommandState(target.value.toLowerCase(), false, null));
+                    }
+                });
+            })();
+        </script>
+    </div>
+</div>
+
+<footer>
+    <hr/>
+    <p>
+        <a href="http://www.knightboy.cn" target="_blank">ByKnight </a>&copy 2018
+    </p>
+</footer>
+</body>
+</html>
