@@ -121,7 +121,7 @@ hr {
 
 
 body {
-    background-color: lightslategray;
+    background: lightslategray url('https://github.com/Knight-boy/knight-boy.github.io/blob/master/Myself/image/bg.jpg?raw=true') 85px 0 repeat-y;
     font-family: sans-serif, Microsoft Yahei, Helvetica Neue;
     zoom: 80%;
 }
@@ -154,9 +154,9 @@ progress::-moz-progress-bar {
 
 }
 
-progress::-moz-progress-value {
-    background-color: #708d9b;
-}
+/*progress::-moz-progress-value {*/
+    /*background-color: #708d9b;*/
+/*}*/
 
 .progress-list {
     line-height: 2;
@@ -191,7 +191,7 @@ progress::-moz-progress-value {
     margin: 0 auto;
     margin-top:20px;
     margin-bottom: 10px;
-    background-image:url('https://avatars0.githubusercontent.com/u/21081491?v=3&s=460');
+    background-image:url('https://github.com/Knight-boy/knight-boy.github.io/blob/master/public/images/Owner.jpg?raw=true');
     background-size: 120%;
     background-position:center;
     border-radius:50%;
