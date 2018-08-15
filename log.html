@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registering</title>
+    <script type="text/javascript" src="./public/javascript/Rexp.js"></script>
+    <link rel='stylesheet' href='./public/css/style.css' />
+</head>
+<body>
+<div class="nav">
+    <div class="nav_area">
+        <div class="center_area">
+            <div class="clearfix">
+                <ul class="navigation">
+                    <li class="dropdown"><a href="/">首页</a></li>
+                    <li class="lastchild" style="float:right"><a href="/reg">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="login-container">
+    <div class="login" id="login_page">
+
+        <form action = "/log" class="form-horizontal" method="post">
+            <fieldset style="border-style: none;">
+                <!--<div class="fieldset-control">-->
+                <h1 class="welcome">歡迎</h1>
+                <!--</div>-->
+                <div class="groupt">
+                    <label for="account" class="controllabel">用户名:</label>
+                    <input id="account" type="text" class="formcontrol" placeholder="Username" name="username" onblur="compareData()"
+                           required/><span id="usermessage"></span>
+                </div>
+
+                <div class="groupt">
+                    <label for="password" class="controllabel">密码:</label>
+                    <input id="password" type="password" class="formcontrol" placeholder="Password" name="password"
+                           onblur="comparePData()" required/><span id="passwordmesg"></span>
+                </div>
+                <div class="fieldsetcontrol">
+                    <div class="submit-login">
+                        <button type="submit" class="btndefault">登陆</button>
+                    </div>
+                </div>
+                <!--<div class="form-group">-->
+                <!--<div class="col-sm-offset-3 col-sm-5">-->
+                <!--<div class="checkbox">-->
+                <!--<label>-->
+                <!--<input type="checkbox">自动登陆-->
+                <!--</label>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-sm-4">-->
+                <!--<span><a href="#">是否忘记密码？</a></span>-->
+                <!--</div>-->
+                <!--</div>-->
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<div id="container" class="container">
+    <div class="main-content"></div>
+</div>
+
+<footer>
+    <hr/>
+    <p>
+        <a href="http://www.knight.com" target="_blank">ByKnight </a>
+        &copy 2018
+    </p>
+</footer>
+
+<div id="scrolltop" style="right:10px;visibility:visible;">
+    <span>
+        <a title="返回首页" class="returnboard" hidefocus="true" href="/"></a>
+    </span>
+</div>
+</body>
+</html>
