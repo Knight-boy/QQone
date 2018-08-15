@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ListenMV</title>
+    <script src="https://lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://lib.baomitu.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://lib.baomitu.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: url('https://ws2.sinaimg.cn/large/a15b4afegy1fc6ok5m453j22bc1ji47p');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /*垂直居中*/
+        #demo {
+            overflow: hidden;
+            position: absolute;
+            display: block;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+        }
+        #demo{
+            width:100%;
+            /*max-width: 1250px;*/
+            margin:7% 5% 0 5%;
+            overflow: scroll;
+        }
+        .div-center {
+            display:-webkit-box;
+            display:-moz-box;
+            -webkit-box-pack: center;
+        }
+
+        #demo video {
+            margin: -25px 5px 0 5px;
+        }
+        .loader {
+            position: absolute;
+            left:50%;
+            bottom:0;
+
+        }
+    </style>
+</head>
+<body>
+<!--搜索工具栏-->
+<div class="row div-center">
+    <div class="col-lg-6 col-md-6">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for MV...">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </button>
+            </span>
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+</div>
+
+<!--播放界面-->
+<!--<ul id="demo"></ul>-->
+<div id="demo"></div>
+<!--实现脚本-->
+<script>
+
+    var outfragment = document.createDocumentFragment();
+    var div = document.getElementById('demo');
+    var urls=['http://v4c.music.126.net/20180801111124/48a0520d584e7efd8d1573f14c39a5a5/web/cloudmusic/mv/20170828093240/5c4e8c88-c6b3-4886-be70-912523d2931c/490a186661fbc90be84193b8a032ee35.mp4',
+        'http://v4c.music.126.net/20180801111124/48a0520d584e7efd8d1573f14c39a5a5/web/cloudmusic/mv/20170828093240/5c4e8c88-c6b3-4886-be70-912523d2931c/490a186661fbc90be84193b8a032ee35.mp4',
+        'http://v4c.music.126.net/20180801111124/48a0520d584e7efd8d1573f14c39a5a5/web/cloudmusic/mv/20170828093240/5c4e8c88-c6b3-4886-be70-912523d2931c/490a186661fbc90be84193b8a032ee35.mp4',
+        'http://v4c.music.126.net/20180801111124/48a0520d584e7efd8d1573f14c39a5a5/web/cloudmusic/mv/20170828093240/5c4e8c88-c6b3-4886-be70-912523d2931c/490a186661fbc90be84193b8a032ee35.mp4',
+        'http://v4c.music.126.net/20180801111124/48a0520d584e7efd8d1573f14c39a5a5/web/cloudmusic/mv/20170828093240/5c4e8c88-c6b3-4886-be70-912523d2931c/490a186661fbc90be84193b8a032ee35.mp4',
+        'http://v4c.music.126.net/20180801111124/48a0520d584e7efd8d1573f14c39a5a5/web/cloudmusic/mv/20170828093240/5c4e8c88-c6b3-4886-be70-912523d2931c/490a186661fbc90be84193b8a032ee35.mp4',
+        'http://v4c.music.126.net/20180801111124/48a0520d584e7efd8d1573f14c39a5a5/web/cloudmusic/mv/20170828093240/5c4e8c88-c6b3-4886-be70-912523d2931c/490a186661fbc90be84193b8a032ee35.mp4',
+        'http://v4c.music.126.net/20180801111124/48a0520d584e7efd8d1573f14c39a5a5/web/cloudmusic/mv/20170828093240/5c4e8c88-c6b3-4886-be70-912523d2931c/490a186661fbc90be84193b8a032ee35.mp4',
+    ];
+
+    for (var i = 0; i < urls.length; i++) {
+
+        var vid = document.createElement('video');
+        vid.width = 320;
+        vid.height = 240;
+        var attr = document.createAttribute('controls');
+        attr.value = "true";
+        vid.setAttributeNode(attr);
+        //
+        var sour = document.createElement('source');
+        sour.src = `${urls[i]}`;
+        sour.type = 'video/mp4';
+        vid.appendChild(sour);
+
+        outfragment.appendChild(vid);
+    }
+    div.appendChild(outfragment);
+
+    var con = document.createElement('div');
+    con.style.width='24px';
+    con.style.height='24px';
+    con.style.boxPack='center';
+    var img = new Image();
+    img.src='../public/images/loading.gif';
+    img.className = 'loader';
+    con.appendChild(img);
+    img.style.width='24px';
+    img.style.height='24px';
+    document.body.appendChild(con);
+</script>
+</body>
+</html>
