@@ -1,0 +1,196 @@
+body {
+  padding: 0 0;
+  margin:0 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background:url('https://ws2.sinaimg.cn/large/a15b4afegy1fc6ok5m453j22bc1ji47p');
+  background-size: cover;
+}
+
+a {
+  font-style: normal;
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: underline;
+}
+.clearfix::after{
+  content:"";
+  clear: both;
+  display:block;
+  height:0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.head1 {
+    position:absolute;
+    top:40%;
+    left:40%;
+  font-size: 2em;
+}
+
+.login-container {
+  margin:120px auto;
+  width:576px;
+
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px 15px;
+  opacity: 0.7;
+}
+.nav{
+  height:51px;
+}
+.nav_area{
+  position:fixed;
+  z-index:99;
+  width:100%;
+  height:51px;
+  top:0;
+  left:0;
+  _position:absolute;
+  background-color:transparent;
+}
+.center_area{
+  position: relative;
+  height:51px;
+}
+.navigation{
+  width:1049px;
+  position:relative;
+  margin:0 auto;
+}
+.dropdown{
+  float:left;
+}
+.dropdown a,.lastchild a,.dropbutton{
+  display:block;
+  color:#000;
+
+  padding:15px;
+  text-decoration: none;
+  background-color:transparent;
+}
+.nav .dropdown .active,.dropdown a:hover,.lastchild a:hover,.dropdown:hover .dropbutton{
+  background-color:#265380;
+  color:white;
+}
+.dropdown:hover .drop-content{
+  display:block;
+  z-index: 5;
+}
+
+.drop-content{
+  display:none;
+  position:absolute;
+  background-color:#f9f9f9;
+  min-width:160px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+.drop-content a{
+  display:block;
+  padding:12px;
+  text-decoration:none;
+}
+.drop-content a:hover{
+  background-color:#f1f1f1;
+  color:#000;
+}
+ul li {
+  list-style: none;
+}
+.fieldsetcontrol {
+  text-align:center;
+  font-size:35px;
+}
+#scrolltop {
+  visibility:hidden;
+  position:fixed;
+  height:30px;
+  bottom:100px;
+  display:block;
+  margin:-30px 0 0 2px;
+  width:40px;
+  background:#f4f4f4;
+  border:1px solid #cdcdcd;
+  border-radius:3px;
+  border-top:none;
+  cursor:pointer;
+}
+#scrolltop a{
+  display:block;
+  width:30px;
+  height:24px;
+  padding:3px 5px;
+  line-height:12px;
+  text-align:center;
+  color:#787878;
+  text-decoration: none;
+  background:url(/images/scrolltop.png) no-repeat 0 0;
+  border-top:1px solid #cdcdcd;
+}
+.returnlist, .returnboard{
+  background-position:0 -61px !important;
+}
+.groupt {
+    position:relative;
+    line-height: 35px;
+    left:5%;
+    bottom:15%;
+}
+.groupt span {
+    color:#FF0000;
+}
+.controllabel {
+    float:left;
+    width:20%;
+    text-align: right;
+    padding-right: 7px;
+    font-size: 15px;
+}
+/*.form-control {*/
+    /*float:left;*/
+/*}*/
+#account,#password,#password-repeat,#telephone,#email{
+    width:50%;
+    height:20px;
+}
+.btndefault {
+    height:30px;
+    padding:0 13px;
+    border-radius: 7px;
+}
+.btndefault:hover {
+  border:1px;
+  background-color:#dedede;
+}
+
+.container {
+  /* position:absolute; */
+  height:auto;
+  width: 1049px;
+  margin: 0 auto;
+}
+.main-content {
+  height:100%;
+}
+.container .blogtext {
+  width:500px;
+  height:auto;
+  position: absolute;
+  top:100px;
+  left:450px;
+  padding:30px;
+  border: 1px solid #dedede73;
+  /* margin-top: -50%; */
+  /* margin-left: -524px; */
+}
+footer {
+  width:100%;
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+}
+footer p, h1 {
+  text-align:center;
+}
