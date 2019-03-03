@@ -124,7 +124,7 @@ body {
     background-color: lightslategray;
     /*background: lightslategray url('https://github.com/Knight-boy/knight-boy.github.io/blob/master/Myself/image/bg.jpg?raw=true') 85px 0 repeat-y;*/
     font-family: sans-serif, Microsoft Yahei, Helvetica Neue;
-    zoom: 80%;
+    zoom: 77%;
 }
 
 footer {
@@ -209,9 +209,8 @@ progress::-moz-progress-bar {
     width: 1050px;
     height: 1550px;
     margin-left: -525px;
-    margin-top: -775px;
+    margin-top: -375px;
     background-color: white;
-    overflow: auto;
 }
 
 .side {
