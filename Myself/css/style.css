@@ -203,11 +203,13 @@ progress::-moz-progress-bar {
 
 
 .container {
-    position: relative;
-    margin: 0 auto;
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 1050px;
     height: 1550px;
+    margin-left: -525px;
+    margin-top: -775px;
     background-color: white;
 
 }
