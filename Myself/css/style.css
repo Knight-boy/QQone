@@ -6,7 +6,6 @@
     url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 
-
 .icon-work:before { content: "\eac9"; }
 .icon-project:before { content: "\eaf4"; }
 .icon-phone:before { content: "\ec7a"; }
