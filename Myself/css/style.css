@@ -209,7 +209,7 @@ progress::-moz-progress-bar {
     bottom: 0;
     width: 1050px;
     height: 1550px;
-    margin: 0;
+    margin: auto;
     background-color: white;
     /*position:relative;
     width: 1050px;
