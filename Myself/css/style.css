@@ -211,7 +211,7 @@ progress::-moz-progress-bar {
     margin-left: -525px;
     margin-top: -775px;
     background-color: white;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .side {
