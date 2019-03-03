@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5 {
 
 
 hr {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
 .info-unit {
@@ -120,7 +120,6 @@ hr {
 
 
 body {
-    position: relative;
     background-color: lightslategray;
     /*background: lightslategray url('https://github.com/Knight-boy/knight-boy.github.io/blob/master/Myself/image/bg.jpg?raw=true') 85px 0 repeat-y;*/
     font-family: sans-serif, Microsoft Yahei, Helvetica Neue;
