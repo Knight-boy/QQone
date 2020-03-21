@@ -4,12 +4,12 @@ Knight V1.0.1
 
 Items
 ----
-[主页](https://knight-boy.github.io/)
+[主页](https://knightboy.cn)
 
-[简历](https://knight-boy.github.io/Myself/Resume)
+[简历](https://www.knightboy.cn/QQone/Myself/Resume)
 
-[留言](https://knight-boy.github.io/SimEdit/Writing)
+[留言](https://www.knightboy.cn/QQone/SimEdit/Writing)
 
-[入口](https://knight-boy.github.io/reg)
+[入口](https://www.knightboy.cn/QQone/reg)
 
-[Music](https://knight-boy.github.io/MVHere/index)
+[Music](https://www.knightboy.cn/QQone/MVHere/index)
